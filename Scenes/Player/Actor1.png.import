@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/battleback7.png-910197bc2c5f04f14f6e1dfc5d1e3a26.stex"
+path="res://.import/Actor1.png-4a611f5ccb7e782406d5f356091fa4bf.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://battleback7.png"
-dest_files=[ "res://.import/battleback7.png-910197bc2c5f04f14f6e1dfc5d1e3a26.stex" ]
+source_file="res://Scenes/Player/Actor1.png"
+dest_files=[ "res://.import/Actor1.png-4a611f5ccb7e782406d5f356091fa4bf.stex" ]
 
 [params]
 
