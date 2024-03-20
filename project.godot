@@ -11,7 +11,7 @@ config_version=4
 [application]
 
 config/name="Samurai Cat Girls And Mecha Dinosaurs"
-run/main_scene="res://Scenes/Player/KinematicBody2D.tscn"
+run/main_scene="res://Scenes/Map/Map1.tscn"
 config/icon="res://icon.png"
 
 [gui]

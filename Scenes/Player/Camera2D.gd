@@ -8,11 +8,13 @@ extends Camera2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	var node = get_node("../../../Background")
-	var backgroundSize = node.get_rect().size
+#	var node = get_node("../../../Background")
+#	var backgroundSize = node.get_rect().size
+#
+#	print(node.get_rect().size.x)
+#	print(node.get_rect().size.y)
 	
-	print(node.get_rect().size.x)
-	print(node.get_rect().size.y)
+	
 #	self.limit_right = backgroundSize.x
 #	self.limit_top = backgroundSize.y
 #	self.limit_left = backgroundSize.x
