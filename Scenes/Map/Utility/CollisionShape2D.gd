@@ -1,22 +1,22 @@
-extends Area2D
+extends CollisionShape2D
 
 
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
 
+func get_local_scene_root(p_node : Node) -> Node:
 
+	while(p_node and not p_node.filename):
+		p_node = p_node.get_parent()
+		
+	return p_node as Node
+	
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	connect("body_entered", self, "_on_body_entered")
+	self.shape = get_local_scene_root(self).shape
 	pass # Replace with function body.
 
-func _on_body_entered(body):
-#	print(body.name)
-#	print(self)
-	if body.name == "KinematicBody2D":
-		get_tree().change_scene("res://Scenes/Map/map2.tscn")
-#	queue_free()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
