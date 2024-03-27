@@ -13,7 +13,7 @@ func _physics_process(_delta: float) -> void:
 	
 	if direction.length() > 1.0:
 		direction = direction.normalized()
-	move_and_slide(speed * direction)
+	var _disc = move_and_slide(speed * direction)
 	
 func _unhandled_input(event):
 	if event.is_action_pressed("right"):
