@@ -1,0 +1,59 @@
+{
+"@path": "res://addons/dialogic/Resources/character.gd",
+"@subpath": NodePath(""),
+"_translation_id": "",
+"color": Color(1, 0.470588, 0, 1),
+"custom_info": {
+"sound_mood_default": "Mood 1",
+"sound_moods": {
+"Mood 1": {
+"mode": 1,
+"name": "Mood 1",
+"pitch_base": 1.0,
+"pitch_variance": 0.0,
+"skip_characters": 5.0,
+"sound_path": "res://timelines/Retro_Single_v2_wav.wav",
+"volume_base": -0.5,
+"volume_variance": 0.0
+}
+},
+"style": ""
+},
+"default_portrait": "sad",
+"description": "Oldest child and heir of the Sushinoo family. Gets easily annoyed by her twin siblings, but in actuality really loves her family.",
+"display_name": "Ringo",
+"mirror": false,
+"nicknames": ["Rin-Rin"],
+"offset": Vector2(0, 0),
+"portraits": {
+"angry": {
+"export_overrides": {
+"image": "\"res://timelines/d_characters/ringo/00062-3442580408.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.8,
+"scene": ""
+},
+"happy": {
+"export_overrides": {
+"image": "\"res://timelines/d_characters/ringo/00044-2483378312.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.8,
+"scene": ""
+},
+"sad": {
+"export_overrides": {
+"image": "\"res://timelines/d_characters/ringo/00027-2065639705.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.8,
+"scene": "",
+"sound_mood": "Mood 1"
+}
+},
+"scale": 1.0
+}

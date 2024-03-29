@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://t0gxydfahh16"]
+
+[ext_resource type="Script" path="res://Scenes/Maps/Utility/map_transition.gd" id="1_htxov"]
+[ext_resource type="Script" path="res://Scenes/Maps/Utility/collisionresizer.gd" id="2_f7dnf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ai43r"]
+size = Vector2(59, 716)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tbtsj"]
+
+[node name="MapTransition" type="CollisionShape2D"]
+position = Vector2(0, 2)
+shape = SubResource("RectangleShape2D_ai43r")
+script = ExtResource("1_htxov")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionResizer" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_tbtsj")
+script = ExtResource("2_f7dnf")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

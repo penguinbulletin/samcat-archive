@@ -1,0 +1,57 @@
+[wait time="1.0"]
+[background arg="res://timelines/home/01.png" fade="0.5"]
+[wait time="1.0"]
+The early morning dewdrops glimmer as the sun rises. But already, the fisherman of the village are at work.\
+Some are cleaning their rods. Others cleaning their first few catches.\
+The fish are the livelihood of the village. They sustain the village and are our pride and joy.\
+The sushi in this village are unlike any other. They give us the strength to work and the joy to live.\
+But...
+[background arg="res://timelines/home/sushi_shop.jpg" fade="0.5"]
+[wait time="1.0"]
+join mother 1
+[music path="res://timelines/home/placeholder - Sea Cat Restaurant Lily.mp3" fade="0.0" volume="0.0"]
+mother: We can't make any sushi if we don't have any, do we?!\
+You were supposed to get some more yesterday, but what were you doing?
+join ringo 3
+ringo (sad): ...
+mother: Ringo!
+update ringo [animation="Bounce"]
+ringo (sad): I got distracted! I'm sorry!
+mother: *sigh*\
+What could possibly distract you from the livelihood of your family?
+ringo (sad): Don't say it like that mother...\
+There were just some unusual people around.\
+And I wanted to see what they were up to, that's all!
+mother: You know, curiosity killed the cat.\
+And we already know that the Futures are only here to survey the land.
+update ringo [animation="Bounce"]
+ringo: But still!
+mother: No "buts" miss!\
+Now I want you to go out there and actually catch something. \
+Or it's not only our customers who won't be getting dinner.
+update ringo [animation="Shake X"]
+ringo: Ugh...\
+I understand.
+mother: Ok now, go.\
+Oh and one more thing before you go.\
+Check up on your siblings first. I heard Satsuma got into trouble again.
+ringo: Ugh, geez not again. He's a little troublemaker, that one.
+mother: That's one thing we definitely agree on, Ringo. When will that boy learn?
+ringo: Alright I better go check up on him then, mother.
+mother: And?
+ringo: Yeah, yeah. I'll remember to get some fish too...
+update ringo 4 [ mirrored="true" move_time="0.5"]
+mother: Ringo?
+ringo: Hm?
+mother: Take care of yourself.\
+And remember that I love you.
+[wait time="1.0"]
+update ringo (happy) [animation="Bounce" wait="true"]
+[wait time="1.0"]
+leave ringo [animation="Slide Out Right" wait="true"]
+leave --All--
+[background arg="res://timelines/home/02.png" fade="0.5"]
+[music path="res://timelines/home/placeholder - Town of Palm.mp3" fade="0.5" volume="0.0"]
+[wait time="1.0"]
+join ringo (happy) 1 [animation="Slide In Left" wait="true"]
+ringo: Satsuma!

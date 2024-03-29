@@ -1,0 +1,14 @@
+As Ringo finally arrives at her home village, she catches a whiff of ash in the air.\
+Walking closer, her expression quickly changes from one of joy to shock and worry.
+join ringo 1 [animation="Bounce In"]
+update ringo [ mirrored="true"]
+ringo (sad): !
+ringo (sad): They're all gone...\
+I was only gone for a few hours... How could this have happened?
+Ringo looks around at the devastation before her. The entire village, left in smouldering ruins.\
+The fishermen by the docks.\
+The village quest board.\
+And her family sushi shop. All destroyed.
+update ringo (sad) [animation="Shake X" wait="true" repeat="2"]
+update ringo [ mirrored="false"]
+ringo (angry): I will find out who did this. And get my family back!

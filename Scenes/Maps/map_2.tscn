@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://bq67dx0cabwll"]
+
+[ext_resource type="Texture2D" uid="uid://de17tokiw3ort" path="res://Scenes/Maps/map2.png" id="1_y5lsc"]
+[ext_resource type="PackedScene" uid="uid://lrag0r1p6yfa" path="res://Scenes/Player/player.tscn" id="2_e26qd"]
+
+[node name="Map2" type="Node2D"]
+
+[node name="Map2" type="Sprite2D" parent="."]
+position = Vector2(640, 66)
+texture = ExtResource("1_y5lsc")
+
+[node name="Player" parent="." instance=ExtResource("2_e26qd")]

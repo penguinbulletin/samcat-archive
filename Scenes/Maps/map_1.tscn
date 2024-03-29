@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3 uid="uid://h7ytxb0qma8v"]
+
+[ext_resource type="Texture2D" uid="uid://dbh411rbisd4q" path="res://Scenes/Maps/map1.png" id="1_kgyfc"]
+[ext_resource type="PackedScene" uid="uid://lrag0r1p6yfa" path="res://Scenes/Player/player.tscn" id="2_xc50k"]
+[ext_resource type="PackedScene" uid="uid://t0gxydfahh16" path="res://Scenes/Maps/Utility/map_transition.tscn" id="3_khqrn"]
+[ext_resource type="PackedScene" uid="uid://b2nbb4yt0mny4" path="res://Scenes/NPC/Base/npc_base.tscn" id="4_75tou"]
+
+[node name="Map1" type="Node2D"]
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(715, -3)
+texture = ExtResource("1_kgyfc")
+
+[node name="Player" parent="." instance=ExtResource("2_xc50k")]
+
+[node name="MapTransition" parent="." instance=ExtResource("3_khqrn")]
+position = Vector2(1798.81, 28)
+map_name = "res://Scenes/Maps/map_2.tscn"
+
+[node name="NPC_Base" parent="." instance=ExtResource("4_75tou")]
+position = Vector2(783, 181)

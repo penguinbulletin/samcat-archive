@@ -1,0 +1,47 @@
+[gd_scene load_steps=8 format=3 uid="uid://b2nbb4yt0mny4"]
+
+[ext_resource type="Script" path="res://Scenes/NPC/Base/CharacterBody2D.gd" id="1_c4jq0"]
+[ext_resource type="Texture2D" uid="uid://ctsi5i3eqb5na" path="res://Scenes/NPC/Base/slime.png" id="2_fpbyo"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nu5lu"]
+atlas = ExtResource("2_fpbyo")
+region = Rect2(0, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5gmpo"]
+atlas = ExtResource("2_fpbyo")
+region = Rect2(48, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hgflx"]
+atlas = ExtResource("2_fpbyo")
+region = Rect2(96, 0, 48, 48)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_k321j"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nu5lu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5gmpo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hgflx")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2xcm8"]
+size = Vector2(48, 48)
+
+[node name="NPC_Base" type="Node2D"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+script = ExtResource("1_c4jq0")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
+sprite_frames = SubResource("SpriteFrames_k321j")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+shape = SubResource("RectangleShape2D_2xcm8")
