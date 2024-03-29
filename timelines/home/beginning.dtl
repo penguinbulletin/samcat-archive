@@ -5,7 +5,7 @@ The early morning dewdrops glimmer as the sun rises. But already, the fisherman 
 Some are cleaning their rods. Others cleaning their first few catches.\
 The fish are the livelihood of the village. They sustain the village and are our pride and joy.\
 The sushi in this village are unlike any other. They give us the strength to work and the joy to live.\
-But...
+And yet...
 [background arg="res://timelines/home/sushi_shop.jpg" fade="0.5"]
 [wait time="1.0"]
 join mother 1
@@ -32,11 +32,11 @@ Or it's not only our customers who won't be getting dinner.
 update ringo [animation="Shake X"]
 ringo: Ugh...\
 I understand.
-mother: Ok now, go.\
+mother: Ok now, get moving.\
 Oh and one more thing before you go.\
 Check up on your siblings first. I heard Satsuma got into trouble again.
 ringo: Ugh, geez not again. He's a little troublemaker, that one.
-mother: That's one thing we definitely agree on, Ringo. When will that boy learn?
+mother: That's one thing we definitely agree on, Ringo. Just when will that boy learn?
 ringo: Alright I better go check up on him then, mother.
 mother: And?
 ringo: Yeah, yeah. I'll remember to get some fish too...
