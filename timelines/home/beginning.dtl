@@ -9,7 +9,7 @@ And yet...
 [background arg="res://timelines/home/sushi_shop.jpg" fade="0.5"]
 [wait time="1.0"]
 join mother 1
-[music path="res://timelines/home/placeholder - Sea Cat Restaurant Lily.mp3" fade="0.0" volume="0.0"]
+[music path="res://bgm/01 - placeholder - Sea Cat Restaurant Lily.mp3" fade="0.0" volume="0.0"]
 mother: We can't make any sushi if we don't have any, do we?!\
 You were supposed to get some more yesterday, but what were you doing?
 join ringo 3
@@ -34,7 +34,7 @@ ringo: Ugh...\
 I understand.
 mother: Ok now, get moving.\
 Oh and one more thing before you go.\
-Check up on your siblings first. I heard Satsuma got into trouble again.
+Check up on your siblings too. I heard Satsuma got into trouble again.
 ringo: Ugh, geez not again. He's a little troublemaker, that one.
 mother: That's one thing we definitely agree on, Ringo. Just when will that boy learn?
 ringo: Alright I better go check up on him then, mother.
@@ -51,7 +51,12 @@ update ringo (happy) [animation="Bounce" wait="true"]
 leave ringo [animation="Slide Out Right" wait="true"]
 leave --All--
 [background arg="res://timelines/home/02.png" fade="0.5"]
-[music path="res://timelines/home/placeholder - Town of Palm.mp3" fade="0.5" volume="0.0"]
+[music path="res://bgm/02 - placeholder - Town of Palm.mp3" fade="0.5" volume="0.0"]
 [wait time="1.0"]
 join ringo (happy) 1 [animation="Slide In Left" wait="true"]
-ringo: Satsuma!
+ringo: Alright now what to do?\
+I've got to catch some fish for us to serve tonight. And also see what Satty and Mikky are up to.\
+I can catch the fish we want by the ocean, and Satty and Mikky are usually playing by the river stream.\
+Guess I better get a move on.\
+I've
+[end_timeline]

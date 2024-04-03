@@ -30,11 +30,20 @@ directories/dch_directory={
 }
 directories/dtl_directory={
 "beginning": "res://timelines/home/beginning.dtl",
+"home-docks-01": "res://timelines/home/home-docks-01.dtl",
+"home-exit-01": "res://bgm/home-exit-01.dtl",
+"home-itemshop-01": "res://timelines/home/home-itemshop-01.dtl",
+"home-questboard-01": "res://timelines/home/home-questboard-01.dtl",
+"home-sushi-01": "res://timelines/home/home-sushi-01.dtl",
 "post_desctruction": "res://timelines/home/post_destruction.dtl"
 }
-layout/style_list=["res://timelines/style.tres"]
-layout/default_style="res://timelines/style.tres"
-variables={}
+layout/style_list=["res://timelines/style/style.tres"]
+layout/default_style="res://timelines/style/style.tres"
+variables={
+"home": {
+"met_mikan": false
+}
+}
 text/letter_speed=0.01
 text/initial_text_reveal_skippable=true
 text/text_reveal_skip_delay=0.1
@@ -55,6 +64,14 @@ history/simple_history_enabled=true
 text/autocolor_names=true
 text/split_at_new_lines=true
 glossary/default_case_sensitive=true
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=980
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+window/stretch/scale_mode="integer"
 
 [editor_plugins]
 

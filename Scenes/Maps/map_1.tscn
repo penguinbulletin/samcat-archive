@@ -1,21 +1,70 @@
 [gd_scene load_steps=5 format=3 uid="uid://h7ytxb0qma8v"]
 
-[ext_resource type="Texture2D" uid="uid://dbh411rbisd4q" path="res://Scenes/Maps/map1.png" id="1_kgyfc"]
-[ext_resource type="PackedScene" uid="uid://lrag0r1p6yfa" path="res://Scenes/Player/player.tscn" id="2_xc50k"]
-[ext_resource type="PackedScene" uid="uid://t0gxydfahh16" path="res://Scenes/Maps/Utility/map_transition.tscn" id="3_khqrn"]
-[ext_resource type="PackedScene" uid="uid://b2nbb4yt0mny4" path="res://Scenes/NPC/Base/npc_base.tscn" id="4_75tou"]
+[ext_resource type="Texture2D" uid="uid://385c6b0vroyp" path="res://timelines/home/02.png" id="1_u3xv7"]
+[ext_resource type="AudioStream" uid="uid://c3y232q5bbunu" path="res://bgm/02 - placeholder - Town of Palm.mp3" id="2_4naqo"]
+[ext_resource type="Texture2D" uid="uid://dhctuwurqwd0f" path="res://timelines/style/window.png" id="3_33dc7"]
+[ext_resource type="LabelSettings" uid="uid://nqj2ry5exvt8" path="res://timelines/style/label_settings.tres" id="4_mpxfh"]
 
 [node name="Map1" type="Node2D"]
 
-[node name="Background" type="Sprite2D" parent="."]
-position = Vector2(715, -3)
-texture = ExtResource("1_kgyfc")
+[node name="02" type="Sprite2D" parent="."]
+position = Vector2(968, 576)
+scale = Vector2(1.75342, 1.75342)
+texture = ExtResource("1_u3xv7")
 
-[node name="Player" parent="." instance=ExtResource("2_xc50k")]
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_4naqo")
 
-[node name="MapTransition" parent="." instance=ExtResource("3_khqrn")]
-position = Vector2(1798.81, 28)
-map_name = "res://Scenes/Maps/map_2.tscn"
+[node name="TextureButton" type="TextureButton" parent="."]
+offset_left = 24.0
+offset_top = 24.0
+offset_right = 466.0
+offset_bottom = 115.0
+texture_normal = ExtResource("3_33dc7")
+ignore_texture_size = true
+stretch_mode = 0
 
-[node name="NPC_Base" parent="." instance=ExtResource("4_75tou")]
-position = Vector2(783, 181)
+[node name="Label" type="Label" parent="TextureButton"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 24.0
+offset_right = 141.0
+offset_bottom = 47.0
+text = "Home Village"
+label_settings = ExtResource("4_mpxfh")
+
+[node name="TextureButton2" type="TextureButton" parent="."]
+offset_left = 24.0
+offset_top = 128.0
+offset_right = 280.0
+offset_bottom = 176.0
+texture_normal = ExtResource("3_33dc7")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="TextureButton2"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 8.0
+offset_right = 112.0
+offset_bottom = 31.0
+text = "Sushi Shop"
+label_settings = ExtResource("4_mpxfh")
+
+[node name="TextureButton3" type="TextureButton" parent="."]
+offset_left = 24.0
+offset_top = 192.0
+offset_right = 280.0
+offset_bottom = 240.0
+texture_normal = ExtResource("3_33dc7")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="TextureButton3"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 8.0
+offset_right = 112.0
+offset_bottom = 31.0
+text = "Village Center"
+label_settings = ExtResource("4_mpxfh")

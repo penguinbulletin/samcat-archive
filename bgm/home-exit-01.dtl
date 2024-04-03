@@ -1,0 +1,6 @@
+if {home.met_mikan} == true:
+	[end_timeline]
+[background arg="res://timelines/home/02.png" fade="0.5"]
+join ringo 1
+ringo: Hmm... I better check around to see if Satty or Mikky are here before leaving.
+[end_timeline]

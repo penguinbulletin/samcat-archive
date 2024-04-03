@@ -1,0 +1,8 @@
+[gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://nqj2ry5exvt8"]
+
+[ext_resource type="FontFile" uid="uid://bnfrpgn3egcc7" path="res://timelines/style/KiyosunaSans-L.otf" id="1_55olf"]
+
+[resource]
+font = ExtResource("1_55olf")
+font_size = 20
+font_color = Color(0.113725, 0.113725, 0.113725, 1)
