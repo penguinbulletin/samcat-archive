@@ -14,6 +14,7 @@ texture = ExtResource("1_u3xv7")
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("2_4naqo")
+autoplay = true
 
 [node name="TextureButton" type="TextureButton" parent="."]
 offset_left = 24.0
